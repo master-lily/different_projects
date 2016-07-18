@@ -9,7 +9,7 @@ module.exports = function(grunt) {
 
             dist:
             {
-                src: ['styles/variables.scss','styles/reset.scss','styles/style.scss','styles/nesting.scss', 'styles/mixins.scss'],
+                src: ['styles/variables.scss','styles/reset.scss','styles/style.scss', 'styles/mixins.scss'],
                 dest: 'styles/main.scss'
             }
         },
@@ -36,20 +36,6 @@ module.exports = function(grunt) {
             }
 
 
-        },
-
-        sass: {
-            dist: {
-                files:
-                    [{
-                        expand: true,
-                        cwd: 'styles',
-                        src: ['style_ie8.scss'],
-                        dest: 'styles',
-                        ext: '.css'
-                    }]
-
-            }
         },
 
         watch:

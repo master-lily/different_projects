@@ -282,10 +282,15 @@ background: url(../img/search_icon.png) no-repeat;
     color: #8a959e;
     margin: 16px 0 0 16px;
     font-weight: 400;
+    display: none;
 }
 
 .invision__form p label {
     margin-left: 50px;
+}
+
+.invision__form [placeholder] {
+  font-size: 18px;
 }
 
 .invision__form input {
@@ -632,7 +637,7 @@ clear:both;
 
 .proposition__button {
     width: 700px;
-    font-family: Arial;
+    font-family: Arial sans-serif;
     margin: 0;
     padding: 19px 26px;
     font-size: 21px;

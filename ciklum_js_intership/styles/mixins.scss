@@ -1,0 +1,14 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.invision__button {
+  @include border-radius(5px);
+}
+
+.invision__form input {
+  @include border-radius(3px);
+}
