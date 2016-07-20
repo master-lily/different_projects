@@ -35,7 +35,7 @@ $footer-border: #d6d6d6;
 }
 
 
-/*HEADER*/
+/*HEADER  меню переделать через списки определений*/
 .header {
   width: 100%;
 }
@@ -64,13 +64,16 @@ $footer-border: #d6d6d6;
 
 .menu__item {
   float: left;
-  padding-left: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
-
+.menu__item:hover {
+  background: #f2f2f2;
 }
 
 .menu__link {
-  color:#2F2F2F;
+  color:$menu-color;
   text-decoration: none;
   line-height: 48px;
 }
@@ -94,10 +97,14 @@ $footer-border: #d6d6d6;
   border-right: 1px solid rgba(0,0,0,0.1);
 }
 
+.submenu__item:hover {
+  background: $menu-darkgray;
+}
+
 
 .header__submenu2 {
   display: none;
-  background: darkgray;
+  background: $menu-darkgray;
 }
 
 
@@ -109,13 +116,12 @@ ul, li {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: $black;
 }
 
 
 .header__submenu {
   display: block;
-  padding-left: 10px;
   position: absolute;
   width: 180px;
 }
@@ -129,33 +135,37 @@ a {
 .header__submenu2 {
   width: 245px;
   margin-top: -102px;
-  margin-left: 180px;
+  margin-left: 160px;
   padding-left: 5px;
   position: absolute;
 
 }
 
 
-
-.menu__link:hover{
-  background: #f2f2f2;
-}
-.submenu__link:hover{
-  background: darkgray;
+.submenu__item:hover{
+  background: $menu-darkgray;
 }
 
-.submenu2__link:hover{
-  background: gray;
+.submenu__item:hover:first-child {
+  text-decoration:underline;
 }
 
 .submenu__item {
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
 }
 
 .submenu2__item {
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left:15px;
   padding-right: 15px;
+}
+
+.submenu2__item:hover {
+  background: $menu-gray;
+  text-decoration: underline;
 }
 
 .header__form-search {
@@ -170,7 +180,7 @@ a {
   width: 260px;
   height: 36px;
   padding: 0 10px;
-  border: 1px solid #A9A9A9;
+  border: 1px solid $search-border;
   outline: none;
 }
 
@@ -187,7 +197,10 @@ a {
 .header__cart {
   float:right;
   display: block;
-  margin-top: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .header__cart a {
   padding-top: 1px;
@@ -195,12 +208,16 @@ a {
   background:url(../img/microsoft-cart.png) no-repeat;
   width:20px;
   height:20px;
-  color: #2F2F2F;
+  color: $menu-color;
 
 }
 
+.header__cart:before {
+//  background:url(../img/microsoft-cart.png) no-repeat;
+}
+
 .header__cart:hover {
-  background: lightgray;
+  background: #f2f2f2;
   width: 40px;
   height:100%;
 }
@@ -215,7 +232,7 @@ a {
 }
 
 .header__entrance:hover {
-  background: lightgray;
+  background: #f2f2f2;
   color: #0078d7;
 }
 
@@ -245,7 +262,7 @@ a {
   padding-top: 160px;
   color: white;
   font-size: 30px;
-  font-family:"Open Sans", "open-sans", sans-serif;
+  font-family:$openSansFont;
   text-align: center;
 }
 
@@ -254,7 +271,7 @@ a {
 }
 
 .invision__form {
-  font-family:"Open Sans", "open-sans", sans-serif;
+  font-family:$openSansFont;
 
 }
 
@@ -279,7 +296,7 @@ a {
   margin: 0;
   font-size: 18px;
   line-height: 1.8em;
-  color: #747c83;
+  color: $invision-text-link;
 }
 
 .invision__form label {
@@ -287,7 +304,7 @@ a {
   top: 0;
   left: 0;
   font-size: 18px;
-  color: #8a959e;
+  color: $invision-form;
   margin: 16px 0 0 16px;
   font-weight: 400;
   display: none;
@@ -303,7 +320,7 @@ a {
 
 .invision__form input {
   background: white;
-  color: #8a959e;
+  color: $invision-form;
   line-height: 1em;
   margin-right: 10px;
   border: 1px solid #d4d7da;
@@ -323,7 +340,7 @@ a {
   display: inline-block;
   padding: 21px 40px 19px;
   width: 250px;
-  background: #ff3366;
+  background: $invision-button;
   border: 0;
   color: white;
   font-size: 15px;
@@ -341,7 +358,7 @@ a {
 .invision__button a {
   display: inline-block;
   padding: 21px 40px 19px;
-  background: #ff3366;
+  background: $invision-button;
   border: 0;
   border-radius: 5px;
   color: white;
@@ -359,7 +376,7 @@ a {
 
 
 p.invision__button:hover {
-  background: #f42156;
+  background: $invision-button-hover;
 }
 
 
@@ -368,19 +385,19 @@ p.invision__button:hover {
   padding-bottom: 100px;
   font-size: 12px;
   line-height: 1.8em;
-  color: #747c83;
-  font-family:"Open Sans", "open-sans", sans-serif;
+  color: $invision-text-link;
+  font-family: $openSansFont;
   text-align: center;
   clear: both;
 }
 
 .invision__link {
-  color: #747c83;
+  color: $invision-text-link;
 }
 
 .invision__link:hover{
   font-weight: bold;
-  color: white;
+  color: $white;
   text-decoration: underline;
 
 }
@@ -388,7 +405,7 @@ p.invision__button:hover {
 /*OCULUS*/
 
 .oculus-wrapper {
-  background-color: #282828;
+  background-color: $oculus-wrapper;
   display: flex;
   flex-flow: row wrap;
   list-style-type: none;
@@ -450,7 +467,7 @@ p.invision__button:hover {
 }
 
 .oculus-proposition__title {
-  color: #a4a5a6;
+  color: $oculus-title;
   font-size: 12px;
   letter-spacing: 2px;
   line-height: 15px;
@@ -459,7 +476,7 @@ p.invision__button:hover {
 }
 
 .oculus-proposition__subtitle {
-  color: #fff;
+  color: $white;
   font-size: 22px;
   line-height: 28px;
   margin: 0;
@@ -490,7 +507,7 @@ p.invision__button:hover {
 }
 
 .column__title {
-  color: #333;
+  color: $footer-link-hover;
   font-weight: bold;
 }
 
@@ -499,7 +516,7 @@ p.invision__button:hover {
 }
 
 .column__link {
-  color: #666;
+  color: $footer-link;
   text-decoration: none;
 }
 
@@ -522,7 +539,7 @@ p.invision__button:hover {
 }
 
 .store__link:hover {
-  color: black;
+  color: $black;
   text-decoration: underline;
 }
 
@@ -537,15 +554,15 @@ p.invision__button:hover {
 }
 
 .map__link {
-  color: #666;
+  color: $footer-link;
   text-decoration: none;
-  border-right: 1px solid #d6d6d6;
+  border-right: 1px solid $footer-border;
   margin-right: 10px;
   padding-right: 12px;
 }
 
 .map__link:hover {
-  color: #333;
+  color: $footer-link-hover;
   text-decoration: underline;
 }
 
@@ -555,12 +572,12 @@ p.invision__button:hover {
 }
 
 .location__link {
-  color: #666;
+  color: $footer-link;
   text-decoration: none;
 }
 
 .location__link:hover {
-  color: #333;
+  color: $footer-link-hover;
   text-decoration: underline;
 }
 
@@ -657,7 +674,7 @@ p.invision__button:hover {
 }
 
 .proposition__link {
-  color: #fff;
+  color: $white;
 }
 
 .proposition__or {

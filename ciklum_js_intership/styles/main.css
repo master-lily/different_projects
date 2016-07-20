@@ -20,7 +20,7 @@
   width: 1260px;
   box-sizing: border-box; }
 
-/*HEADER*/
+/*HEADER  ╨╝╨╡╨╜╤О ╨┐╨╡╤А╨╡╨┤╨╡╨╗╨░╤В╤М ╤З╨╡╤А╨╡╨╖ ╤Б╨┐╨╕╤Б╨║╨╕ ╨╛╨┐╤А╨╡╨┤╨╡╨╗╨╡╨╜╨╕╨╣*/
 .header {
   width: 100%; }
 
@@ -42,7 +42,11 @@
 
 .menu__item {
   float: left;
-  padding-left: 20px; }
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.menu__item:hover {
+  background: #f2f2f2; }
 
 .menu__link {
   color: #2F2F2F;
@@ -65,6 +69,9 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   border-right: 1px solid rgba(0, 0, 0, 0.1); }
 
+.submenu__item:hover {
+  background: darkgray; }
+
 .header__submenu2 {
   display: none;
   background: darkgray; }
@@ -78,7 +85,6 @@ a {
 
 .header__submenu {
   display: block;
-  padding-left: 10px;
   position: absolute;
   width: 180px; }
 
@@ -88,26 +94,30 @@ a {
 .header__submenu2 {
   width: 245px;
   margin-top: -102px;
-  margin-left: 180px;
+  margin-left: 160px;
   padding-left: 5px;
   position: absolute; }
 
-.menu__link:hover {
-  background: #f2f2f2; }
-
-.submenu__link:hover {
+.submenu__item:hover {
   background: darkgray; }
 
-.submenu2__link:hover {
-  background: gray; }
+.submenu__item:hover:first-child {
+  text-decoration: underline; }
 
 .submenu__item {
-  padding-top: 20px; }
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px; }
 
 .submenu2__item {
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px; }
+
+.submenu2__item:hover {
+  background: gray;
+  text-decoration: underline; }
 
 .header__form-search {
   width: 260px;
@@ -135,7 +145,10 @@ a {
 .header__cart {
   float: right;
   display: block;
-  margin-top: 15px; }
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px; }
 
 .header__cart a {
   padding-top: 1px;
@@ -146,7 +159,7 @@ a {
   color: #2F2F2F; }
 
 .header__cart:hover {
-  background: lightgray;
+  background: #f2f2f2;
   width: 40px;
   height: 100%; }
 
@@ -159,7 +172,7 @@ a {
   font-size: 12px; }
 
 .header__entrance:hover {
-  background: lightgray;
+  background: #f2f2f2;
   color: #0078d7; }
 
 .header__nav, form {
@@ -296,7 +309,7 @@ p.invision__button:hover {
 
 .invision__link:hover {
   font-weight: bold;
-  color: white;
+  color: #fff;
   text-decoration: underline; }
 
 /*OCULUS*/
@@ -415,7 +428,7 @@ p.invision__button:hover {
   text-decoration: none; }
 
 .store__link:hover {
-  color: black;
+  color: #000000;
   text-decoration: underline; }
 
 .map__copyrights {
