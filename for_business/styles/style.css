@@ -147,7 +147,16 @@ input[type="search"] {
 }
 
 .device__picture {
-    margin: 0 auto;
+    margin: 0 30%;
+}
+
+.fa {
+    color: #dcdcdc;
+}
+
+.fa:hover {
+    padding-top: 20px;
+    color: #9de4e9;
 }
 .device:nth-child(3) {
     margin-left: 30px;
