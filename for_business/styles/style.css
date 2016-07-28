@@ -150,14 +150,35 @@ input[type="search"] {
     margin: 0 30%;
 }
 
-.fa {
+.fa-desktop {
     color: #dcdcdc;
 }
 
-.fa:hover {
+
+.fa-pencil-square-o {
+    color: #dcdcdc;
+}
+
+
+.fa-picture-o {
+    color: #dcdcdc;
+}
+
+.fa-desktop:hover {
     padding-top: 20px;
     color: #9de4e9;
 }
+
+.fa-pencil-square-o:hover {
+    padding-top: 20px;
+    color: #9de4e9;
+}
+
+.fa-picture-o:hover {
+    padding-top: 20px;
+    color: #9de4e9;
+}
+
 .device:nth-child(3) {
     margin-left: 30px;
     margin-right: 30px;
