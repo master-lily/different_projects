@@ -103,9 +103,11 @@ input {
   width: 190px;
   height: 35px;
   border: 1px solid $icon-color;
+  cursor: pointer;
+outline: none;
 }
 
-input[type="search"] {
+input[type="text"] {
   padding-left: 18px;
 }
 
@@ -242,6 +244,13 @@ input[type="search"] {
   display: block;
   float: left;
 }
+
+.section2__image {
+  width: 310px;
+  height: 185px;
+  overflow: hidden;
+}
+
 
 .row1 {
   margin-top: 110px;

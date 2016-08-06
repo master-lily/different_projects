@@ -6,7 +6,7 @@ $(document).ready(function() {
         singleItem:true,
         navigation: true,
         pagination: true
-        //panigationNumber: 5
+
     });
 
 });
