@@ -65,6 +65,8 @@
 
 .header__submenu {
   display: none;
+  position: absolute;
+  width: 180px;
   background: #f2f2f2;
   border-left: 1px solid rgba(0,0,0,0.05);
   border-bottom: 1px solid rgba(0,0,0,0.3);
@@ -78,6 +80,11 @@
 
 .header__submenu2 {
   display: none;
+  width: 245px;
+  margin-top: -102px;
+  margin-left: 160px;
+  padding-left: 5px;
+  position: absolute;
   background: $menu-darkgray;
 }
 
@@ -94,25 +101,8 @@ a {
 }
 
 
-.header__submenu {
-  display: block;
-  position: absolute;
-  width: 180px;
-}
-
-
 .header__submenu li:last-child {
   padding-bottom:auto;
-}
-
-
-.header__submenu2 {
-  width: 245px;
-  margin-top: -102px;
-  margin-left: 160px;
-  padding-left: 5px;
-  position: absolute;
-
 }
 
 
