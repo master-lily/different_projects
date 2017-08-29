@@ -1,0 +1,359 @@
+/** VARIABLES
+===================================*/
+/** RESET AND LAYOUT
+===================================*/
+.bx-wrapper {
+    position: relative;
+    margin-bottom: 60px;
+    padding: 0;
+    *zoom: 1;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+}
+.bx-wrapper img {
+    max-width: 100%;
+    display: block;
+}
+.bxslider {
+    margin: 0;
+    padding: 0;
+}
+ul.bxslider {
+    list-style: none;
+}
+.bx-viewport {
+    /* fix other elements on the page moving (in Chrome) */
+    -webkit-transform: translateZ(0);
+}
+/** THEME
+===================================*/
+.bx-wrapper {
+    -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
+    border: 5px solid #fff;
+    background: #fff;
+}
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+}
+/* LOADER */
+.bx-wrapper .bx-loading {
+    min-height: 50px;
+    background: url('images/bx_loader.gif') center center no-repeat #ffffff;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+}
+/* PAGER */
+.bx-wrapper .bx-pager {
+    text-align: center;
+    font-size: .85em;
+    font-family: Arial;
+    font-weight: bold;
+    color: #666;
+    /*background: url('../img/control.png') no-repeat;*/
+    padding-top: 20px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #666;
+    /*background: url('../img/control.png') no-repeat;*/
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    /*height: 10px;*/
+    height: 4px;
+    margin: 0 5px;
+    outline: 0;
+    /*-moz-border-radius: 5px;*/
+    /*-webkit-border-radius: 5px;*/
+    /*border-radius: 5px;*/
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #000;
+    /*background: url(../img/activecontrol.png) no-repeat;*/
+}
+.bx-wrapper .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+    display: inline-block;
+    vertical-align: bottom;
+    *zoom: 1;
+    *display: inline;
+}
+.bx-wrapper .bx-pager-item {
+    font-size: 0;
+    line-height: 0;
+}
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.bx-wrapper .bx-prev {
+    left: 10px;
+    background: url('images/controls.png') no-repeat 0 -32px;
+}
+.bx-wrapper .bx-prev:hover,
+.bx-wrapper .bx-prev:focus {
+    background-position: 0 0;
+}
+.bx-wrapper .bx-next {
+    right: 10px;
+    background: url('images/controls.png') no-repeat -43px -32px;
+}
+.bx-wrapper .bx-next:hover,
+.bx-wrapper .bx-next:focus {
+    background-position: -43px 0;
+}
+.bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    z-index: 9999;
+}
+.bx-wrapper .bx-controls-direction a.disabled {
+    display: none;
+}
+/* AUTO CONTROLS (START / STOP) */
+.bx-wrapper .bx-controls-auto {
+    text-align: center;
+}
+.bx-wrapper .bx-controls-auto .bx-start {
+    display: block;
+    text-indent: -9999px;
+    width: 10px;
+    height: 11px;
+    outline: 0;
+    background: url('images/controls.png') -86px -11px no-repeat;
+    margin: 0 3px;
+}
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active,
+.bx-wrapper .bx-controls-auto .bx-start:focus {
+    background-position: -86px 0;
+}
+.bx-wrapper .bx-controls-auto .bx-stop {
+    display: block;
+    text-indent: -9999px;
+    width: 9px;
+    height: 11px;
+    outline: 0;
+    background: url('images/controls.png') -86px -44px no-repeat;
+    margin: 0 3px;
+}
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active,
+.bx-wrapper .bx-controls-auto .bx-stop:focus {
+    background-position: -86px -33px;
+}
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+    text-align: left;
+    width: 80%;
+}
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+    right: 0;
+    width: 35px;
+}
+/* IMAGE CAPTIONS */
+.bx-wrapper .bx-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #666;
+    background: rgba(80, 80, 80, 0.75);
+    width: 100%;
+}
+.bx-wrapper .bx-caption span {
+    color: #fff;
+    font-family: Arial;
+    display: block;
+    font-size: .85em;
+    padding: 10px;
+}
+
+
+
+/* CUSTOM PAGER */
+/*#BXSLIDER1 BXPAGER1*/
+.bxslider-one .bx-wrapper .bx-viewport {
+
+}
+
+.bxslider-one .bx-wrapper {
+    margin-bottom: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.bxslider-one .bx-pager1 {
+    text-align: center;
+    /* background: url(../img/control.png) no-repeat; */
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    z-index: 5;
+
+ }
+
+.bxslider-one .bx-pager1 a {
+    background: url('../img/control.png') no-repeat;
+    width: 15px;
+    height: 30px;
+    display: block;
+    margin-left: 50px;
+    margin-bottom: 5px;
+
+
+}
+
+/*.bx-pager1 a img:hover,*/
+/*.bx-pager1 a img:focus,*/
+/*.bx-pager1 a img:active {*/
+    /*background: url(../img/activecontrol.png) no-repeat;*/
+/*}*/
+.bxslider-one  .bx-pager1.bx-default-pager1 a.active,
+.bxslider-one .bx-pager1 .bx-default-pager1 a:hover,
+.bxslider-one .bx-pager1 .bx-default-pager1 a:focus,
+.bxslider-one .bx-pager1 a:active,
+.bxslider-one .bx-pager1 a:hover {
+    background: url('../img/activecontrol.png') no-repeat;
+    width: 15px;
+    height: 30px;
+}
+
+
+/*.bx-wrapper .bx-pager1 {*/
+    /*text-align: center;*/
+    /*font-size: .85em;*/
+    /*font-family: Arial;*/
+    /*font-weight: bold;*/
+    /*color: #666;*/
+    /*padding-top: 20px;*/
+/*}*/
+/*.bx-wrapper .bx-pager1.bx-default-pager a {*/
+    /*background: #666;*/
+    /*text-indent: -9999px;*/
+    /*display: block;*/
+    /*width: 10px;*/
+    /*height: 10px;*/
+    /*margin: 0 5px;*/
+    /*outline: 0;*/
+    /*-moz-border-radius: 5px;*/
+    /*-webkit-border-radius: 5px;*/
+    /*border-radius: 5px;*/
+/*}*/
+/*.bx-wrapper .bx-pager1.bx-default-pager a:hover,*/
+/*.bx-wrapper .bx-pager1.bx-default-pager a.active,*/
+/*.bx-wrapper .bx-pager1.bx-default-pager a:focus {*/
+    /*background: #000;*/
+/*}*/
+/*.bx-wrapper .bx-pager1-item,*/
+/*.bx-wrapper .bx-controls-auto .bx-controls-auto-item {*/
+    /*display: inline-block;*/
+    /*vertical-align: bottom;*/
+    /**zoom: 1;*/
+    /**display: inline;*/
+/*}*/
+/*.bx-wrapper .bx-pager1-item {*/
+    /*font-size: 0;*/
+    /*line-height: 0;*/
+/*}*/
+
+/*#BXSLIDER2 BXPAGER2*/
+.slider-two {
+    display: none;
+    background: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.slider-two .bx-wrapper .bx-viewport {
+    background: black;
+
+}
+
+.slider-two .bx-wrapper {
+    margin-bottom: 0;
+    border: none;
+    box-shadow: none;
+}
+/*.bx-wrapper2 {*/
+    /*position: relative;*/
+    /*padding: 0;*/
+    /**zoom: 1;*/
+    /*-ms-touch-action: pan-y;*/
+    /*touch-action: pan-y;*/
+    /*max-width: 100%;*/
+    /*background: black;*/
+/*}*/
+.bx-wrapper .img-bxSlider2 {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+
+}
+.bx-pager2 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.bx-pager2 a img:hover,
+.bx-pager2 a img:focus,
+.bx-pager2 a img:active {
+    border: 2px solid white;
+}
+
+.bxslider {
+    background: black;
+}
+
+
+
+
+
+
+
+/*.bx-wrapper .bx-pager2 {*/
+    /*text-align: center;*/
+    /*font-size: .85em;*/
+    /*font-family: Arial;*/
+    /*font-weight: bold;*/
+    /*color: #666;*/
+    /*padding-top: 20px;*/
+/*}*/
+/*.bx-wrapper .bx-pager2.bx-default-pager a {*/
+    /*background: #666;*/
+    /*text-indent: -9999px;*/
+    /*display: block;*/
+    /*width: 10px;*/
+    /*height: 10px;*/
+    /*margin: 0 5px;*/
+    /*outline: 0;*/
+    /*-moz-border-radius: 5px;*/
+    /*-webkit-border-radius: 5px;*/
+    /*border-radius: 5px;*/
+/*}*/
+/*.bx-wrapper .bx-pager2.bx-default-pager a:hover,*/
+/*.bx-wrapper .bx-pager2.bx-default-pager a.active,*/
+/*.bx-wrapper .bx-pager2.bx-default-pager a:focus {*/
+    /*background: #000;*/
+/*}*/
+/*.bx-wrapper .bx-pager2-item,*/
+/*.bx-wrapper .bx-controls-auto .bx-controls-auto-item {*/
+    /*display: inline-block;*/
+    /*vertical-align: bottom;*/
+    /**zoom: 1;*/
+    /**display: inline;*/
+/*}*/
+/*.bx-wrapper .bx-pager2-item {*/
+    /*font-size: 0;*/
+    /*line-height: 0;*/
+/*}*/

@@ -1,0 +1,935 @@
+
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>main page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script2.js"></script>
+
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4.2.0/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+    <script type="text/javascript"  src="js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/script_masonry.js"></script>
+
+
+
+    <!--<script src="js/jquery-1.12.3.js"></script>-->
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/myowl.js"></script>
+
+    <!--BXSLIDER-->
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <!--<script src="js/jquery-1.12.3.js"></script>-->
+    <script src="js/plugins/jquery.fitvids.js"></script>
+    <script src="js/jquery/bxslider1.js"></script>
+    <script src="js/jquery/bxslider2.js"></script>
+    <script src="js/bxsliderInit.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <header class="header">
+
+
+
+        <div class="header__menu1">
+            <ul class="header__menu">
+                <li class="header__item ">
+                    <div class="header__logo">
+                        <img  src="img/logo.png" alt="ТСН" width="50">
+                    </div>
+                </li>
+                <li class="header__item header__item--date">
+                    <div class="header__block">
+                        <p class="header__text">Понеділок</p>
+                        <p class="header__text">29 Травня, 2017</p>
+                    </div>
+                </li>
+                <li class="header__item header__item--weather">
+                    <div class="header__block">
+                        <div class="header__item-img">
+                            <img src="img/rain.png" alt="rain">
+                        </div>
+                        <div class="header__wheather-text">
+                            <p class="header__text">Біла церкова</p>
+                            <p class="header__text header__text--bigger">+25˚C</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="header__item header__item--currency">
+                    <p class="header__text header__text--bigger">
+                        <i class="fa fa-long-arrow-up" aria-hidden="true"></i> <!--Unicode: f176-->
+                        <i class="fa fa-eur" aria-hidden="true"></i> <!--Unicode: f153-->
+                        29.75
+                    </p>
+
+                </li>
+                <li class="header__item header__item--currency">
+                    <p class="header__text header__text--bigger">
+                        <i class="fa fa-long-arrow-down" aria-hidden="true"></i> <!--Unicode: f175-->
+                        <i class="fa fa-usd" aria-hidden="true"></i><!--Unicode: f155-->
+                        26.45
+                    </p>
+                </li>
+                <li class="header__item header__item--vericaltLine"></li>
+            </ul>
+            <ul class="header__menu-right">
+                <li class="header__item header__item--form">
+                    <!--<div class="header__block">-->
+                    <form name="search" action="" method="get">
+                        <label for="search" ></label>
+                        <input type="search" id="search" value="">
+                    </form>
+                    <!--</div>-->
+
+
+
+
+
+                </li>
+                <li class="header__item header__item--shareBlock">
+                    <div>
+                        <div class="header__item header__item--vericaltLine2"></div>
+                        <img id="share" class="header__item-share" src="img/share.png" alt="share">
+                        <!--<i class="fa fa-share-alt" aria-hidden="true"></i>&lt;!&ndash;Unicode:  f1e0 &ndash;&gt;-->
+
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!--POPUP SHARE-->
+        <div id="overlay" class="popupOverlay"></div>
+        <div id="popupShare">
+
+            <img class="popupShare1" src="img/popupWindowShare.jpg" alt="popup Img">
+            <div id="CloseBtn">x</div>
+            <div class="popubBlock__content">
+                <div class="popupblock__title">
+                    Избран новый глава ВОЗ
+                </div>
+                <p class="popupblock__text">
+                    До избрания Генеральным директором ВОЗ Тедрос Адханом Гебрейесу ,был министром
+                    иностранных дел и министром здравоохранения Эфиопии.
+                </p>
+                <p class="popupblock__assign">tsn.ua</p>
+                <div class="popupblock__social">
+
+                </div>
+            </div>
+
+        </div>
+        <!--END POPUP SHARE-->
+
+
+
+
+        <!--<ul class="header__menu header__menu--black">-->
+        <!--<li class="header__item ">-->
+        <!--<div class="header__logo">-->
+        <!--<img  src="img/logo.png" alt="ТСН" width="50">-->
+        <!--</div>-->
+        <!--</li>-->
+        <!--<li class="header__item header__item--dateBlack">-->
+        <!--<div class="header__block">-->
+        <!--<p class="header__text">Понеділок</p>-->
+        <!--<p class="header__text">29 Травня, 2017</p>-->
+        <!--</div>-->
+        <!--</li>-->
+        <!--<li class="header__item header__item--weatherBlack">-->
+        <!--<div class="header__block">-->
+        <!--<div class="header__item-img">-->
+        <!--<img src="img/rain.png" alt="rain">-->
+        <!--</div>-->
+        <!--<div class="header__wheather-text">-->
+        <!--<p class="header__text">Біла церкова</p>-->
+        <!--<p class="header__text header__text--bigger">+25˚C</p>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</li>-->
+        <!--<li class="header__item header__item--currencyBlack">-->
+        <!--<p class="header__text header__text--bigger">-->
+        <!--<i class="fa fa-long-arrow-up" aria-hidden="true"></i> &lt;!&ndash;Unicode: f176&ndash;&gt;-->
+        <!--<i class="fa fa-eur" aria-hidden="true"></i> &lt;!&ndash;Unicode: f153&ndash;&gt;-->
+        <!--29.75-->
+        <!--</p>-->
+
+        <!--</li>-->
+        <!--<li class="header__item header__item--currencyBlack">-->
+        <!--<p class="header__text header__text--bigger">-->
+        <!--<i class="fa fa-long-arrow-down" aria-hidden="true"></i> &lt;!&ndash;Unicode: f175&ndash;&gt;-->
+        <!--<i class="fa fa-usd" aria-hidden="true"></i>&lt;!&ndash;Unicode: f155&ndash;&gt;-->
+        <!--26.45-->
+        <!--</p>-->
+        <!--</li>-->
+        <!--<li class="header__item header__item--vericaltLine"></li>-->
+        <!--</ul>-->
+
+
+        <!--PHOTO-VIDEO BACKGROUND CARUSEL Don't see mp4, only 3 links from documentation-->
+        <!--<div class="owl-carousel owl-theme owl-loaded">-->
+        <!--<div class="owl-item"><img src="img/slide1.jpg" alt="slide1"></div>-->
+        <!--<div class="owl-item"><img src="img/slide2.jpg" alt="slide2"></div>-->
+        <!--<div class="owl-item"><img src="img/slide3.jpg" alt="slide3"></div>-->
+        <!--<div class="owl-item"><img src="img/slide4.jpg" alt="slide4"></div>-->
+        <!--<div class="item-video"><div class="owl-video" href="https://www.youtube.com/watch?v=JpxsRwnRwCQ"></div></div>-->
+
+        <!--</div>-->
+
+        <!--BXSLIDER1-->
+
+        <div class="header__carousel">
+            <div class="bxslider-one">
+                <ul class="bxslider" id="slider1">
+                    <!--vide width=100% height=auto? тогда высота видео превышает высоту других слайдеров-->
+                    <li><video src="video/TopNewsVideo.mp4" preload="" loop=""  controls autoplay style="width: inherit; height: 400px; background-color: black;"></video></li>
+                    <li><img src="img/slide1.jpg" alt="slide1"></li>
+                    <li><img src="img/slide2.jpg" alt="slide2" /></li>
+                    <li><img src="img/slide3.jpg" alt="slide3"></li>
+                    <li><img src="img/slide4.jpg" alt="slide4"></li>
+
+                </ul>
+
+                <div  class="bx-pager1" id="bx-pager1">
+                    <a data-slide-index="0" href=""></a>
+                    <a data-slide-index="1" href=""></a>
+                    <a data-slide-index="2" href=""></a>
+                    <a data-slide-index="3" href=""></a>
+                    <a data-slide-index="4" href=""></a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </header>
+
+    <main>
+
+        <nav class="nav">
+            <ul class="nav__menu">
+
+                <li class="nav__item nav__item--15 "><a class="nav__link" href="">Україна </a></li>
+                <li class="nav__item nav__item--15"><a class="nav__link" href="">Політика </a></li>
+                <li class="nav__item"><a class="nav__link" href="">Відео</a></li>
+                <li class="nav__item"><a class="nav__link" href="">Випуски ТСН</a></li>
+                <li class="nav__item"><a class="nav__link" href="">Блоги</a></li>
+                <li class="nav__item"><a class="nav__link" href="">Проспорт</a></li>
+                <li class="nav__item"><a class="nav__link" href="">Гламур</a></li>
+                <li class="nav__item"><a class="nav__link" href="">Леді</a></li>
+                <li class="nav__item"><a class="nav__link" href="">Цікавинки</a></li>
+                <li class="nav__item"><a class="nav__link" href="">Спецпроекти</a></li>
+                <li class="nav__item nav__item--allmenu"><a class="nav__link nav__link--allmenu" href="">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    Всі розділи
+                </a>
+                    <ul class="nav__menu2">
+                        <li class="nav__item2"><a class="nav__link2" href="">Економіка</a></li>
+                        <li class="nav__item2"><a class="nav__link2" href="">Фото</a></li>
+                        <li class="nav__item2"><a class="nav__link2" href="">Київ</a></li>
+                        <li class="nav__item2"><a class="nav__link2" href="">АТО</a></li>
+                        <li class="nav__item2"><a class="nav__link2" href="">Світ</a></li>
+                        <li class="nav__item2"><a class="nav__link2" href="">Туризм</a></li>
+                        <li class="nav__item2"><a class="nav__link2" href="">Авто</a></li>
+                        <li class="nav__item2"><a class="nav__link2" href="">Наука та IT</a></li>
+                        <li class="nav__item2"><a class="nav__link2" href="">Допомога</a></li>
+                        <li class="nav__item2"><a class="nav__link2" href="">Інтерв'ю</a></li>
+                        <li class="nav__item2"><a class="nav__link2" href="">Інфографіка</a></li>
+                        <li class="nav__item2"><a class="nav__link2" href="">Книжки</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!--SCROLLING AFTER TOP MENU-->
+        <!--<nav class="nav nav--scrolling">-->
+        <!--<li class="header__item ">-->
+        <!--<div class="header__logo">-->
+        <!--<img   class="header__img--scrolling" src="img/logo.png" alt="ТСН" width="50">-->
+        <!--</div>-->
+        <!--</li>-->
+        <!--<ul class="nav__menu">-->
+        <!--<li class="nav__item nav__item--15AfterTop"><a class="nav__link" href="">Україна </a></li>-->
+        <!--<li class="nav__item nav__item--15"><a class="nav__link" href="">Політика </a></li>-->
+        <!--<li class="nav__item"><a class="nav__link" href="">Відео</a></li>-->
+        <!--<li class="nav__item"><a class="nav__link" href="">Випуски ТСН</a></li>-->
+        <!--<li class="nav__item"><a class="nav__link" href="">Блоги</a></li>-->
+        <!--<li class="nav__item"><a class="nav__link" href="">Проспорт</a></li>-->
+        <!--<li class="nav__item"><a class="nav__link" href="">Гламур</a></li>-->
+        <!--<li class="nav__item"><a class="nav__link" href="">Леді</a></li>-->
+        <!--<li class="nav__item"><a class="nav__link" href="">Цікавинки</a></li>-->
+        <!--<li class="nav__item"><a class="nav__link" href="">Спецпроекти</a></li>-->
+        <!--<li class="nav__item nav__item--allmenu"><a class="nav__link nav__link--allmenu" href="">-->
+        <!--<i class="fa fa-bars" aria-hidden="true"></i>-->
+        <!--Всі розділи-->
+        <!--</a>-->
+        <!--<ul class="nav__menu2">-->
+        <!--<li class="nav__item2"><a class="nav__link2" href="">Економіка</a></li>-->
+        <!--<li class="nav__item2"><a class="nav__link2" href="">Фото</a></li>-->
+        <!--<li class="nav__item2"><a class="nav__link2" href="">Київ</a></li>-->
+        <!--<li class="nav__item2"><a class="nav__link2" href="">АТО</a></li>-->
+        <!--<li class="nav__item2"><a class="nav__link2" href="">Світ</a></li>-->
+        <!--<li class="nav__item2"><a class="nav__link2" href="">Туризм</a></li>-->
+        <!--<li class="nav__item2"><a class="nav__link2" href="">Авто</a></li>-->
+        <!--<li class="nav__item2"><a class="nav__link2" href="">Наука та IT</a></li>-->
+        <!--<li class="nav__item2"><a class="nav__link2" href="">Допомога</a></li>-->
+        <!--<li class="nav__item2"><a class="nav__link2" href="">Інтерв'ю</a></li>-->
+        <!--<li class="nav__item2"><a class="nav__link2" href="">Інфографіка</a></li>-->
+        <!--<li class="nav__item2"><a class="nav__link2" href="">Книжки</a></li>-->
+        <!--</ul>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--<ul class="header__menu-right">-->
+        <!--<li class="header__item header__item--form">-->
+        <!--&lt;!&ndash;<div class="header__block">&ndash;&gt;-->
+        <!--<form name="search" action="" method="get">-->
+        <!--<img class="header__item-search" src="img/search-black.png" alt="search">-->
+        <!--<label for="search" ></label>-->
+        <!--<input type="search" id="search" value="">-->
+        <!--</form>-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--</li>-->
+        <!--<li class="header__item header__item--shareBlock">-->
+        <!--<div>-->
+        <!--<div class="header__item header__item--vericaltLine2"></div>-->
+        <!--<img class="header__item-share" src="img/share-black.png" alt="share">-->
+        <!--&lt;!&ndash;<i class="fa fa-share-alt" aria-hidden="true"></i>&lt;!&ndash;Unicode:  f1e0 &ndash;&gt;&ndash;&gt;-->
+        <!--</div>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</nav>-->
+
+        <!--PHOTOBLOCK-->
+        <div class="photoblock">
+            <ul class="photoblock__menu">
+                <li class="photoblock__item"><a class="photoblock__link photoblock__link--active" href="">Головні новини </a></li>
+                <li class="photoblock__item"><a class="photoblock__link" href=""> Популярні </a></li>
+                <li class="photoblock__item"><a class="photoblock__link" href="">Коментують</a></li>
+            </ul>
+
+            <!--PHOTOBLOCK IMAGES-->
+            <div class="photoblock__blocks">
+                <div class="photoblock__block">
+                    <div class="photoblock__photo">
+                        <img class="photoblock__img" src="img/photo1.png" alt="photo">
+                    </div>
+                    <div class="photoblock__text">У столиці Афганістану стався потужний
+                        вибух - понад 90 людей поранені, є загиблі</div>
+                    <div class="photoblock__informblock">
+                        <div class="photoblock__data"><span class="photoblock__world">Світ</span>  28 травня, 2017 08:51</div>
+                        <div class="photoblock__social">
+                            <div class="photoblock__message">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                <span class="photoblock__socialCount">31</span>
+                            </div>
+                            <div class="photoblock__eye">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <span class="photoblock__socialCount">3015</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photoblock__block">
+                    <div class="photoblock__photo">
+                        <img class="photoblock__img" src="img/photo2.png" alt="photo">
+                    </div>
+                    <div class="photoblock__text">В уряді назвали п'ять областей України з найгіршими дорогами</div>
+                    <div class="photoblock__informblock">
+                        <div class="photoblock__data"><span class="photoblock__ukraine">Україна</span>  28 травня, 2017 07:23</div>
+
+                        <div class="photoblock__social">
+                            <div class="photoblock__message">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                <span class="photoblock__socialCount">2</span>
+                            </div>
+                            <div class="photoblock__eye">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <span class="photoblock__socialCount">1025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photoblock__block">
+                    <div class="photoblock__photo">
+                        <img class="photoblock__img " src="img/photo3.png" alt="photo">
+                        <i class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i>
+                        <i class="fa fa-share-square-o" id="shareVideo" aria-hidden="true"></i>
+                        <!-- fa-share-square-o  \f045-->
+
+                    </div>
+                    <div class="photoblock__text">Зіркові гості куми Порошенка.<br> Хто вітав Білозір із днем народження</div>
+                    <div class="photoblock__informblock">
+                        <div class="photoblock__data"><span class="photoblock__glamur"> Гламур</span>  27 травня, 2017 22:18</div>
+                        <div class="photoblock__social">
+                            <div class="photoblock__message">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                <span class="photoblock__socialCount">31</span>
+                            </div>
+                            <div class="photoblock__eye">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <span class="photoblock__socialCount">3015</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photoblock__block">
+                    <div class="photoblock__photo">
+                        <img class="photoblock__img" src="img/photo4.png" alt="photo">
+                    </div>
+                    <div class="photoblock__text">НБУ оголосив про зняття трьох адміністративних обмежень на валютному ринку</div>
+                    <div class="photoblock__informblock">
+                        <div class="photoblock__data"><span class="photoblock__money">Гроші</span>  28 травня, 2017 08:51</div>
+                        <div class="photoblock__social">
+                            <div class="photoblock__message">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                <span class="photoblock__socialCount">31</span>
+                            </div>
+                            <div class="photoblock__eye">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <span class="photoblock__socialCount">3015</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photoblock__block">
+                    <div class="photoblock__photo">
+                        <img class="photoblock__img" src="img/photo5.png" alt="photo">
+                        <i class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i>
+                        <i class="fa fa-share-square-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="photoblock__text">Флінн погодився передати до Сенату документи в рамках розслідування
+                        щодо втручення РФ у вибори... </div>
+                    <div class="photoblock__informblock">
+                        <div class="photoblock__data"><span class="photoblock__world">Світ</span>  27 травня, 2017 22:18</div>
+                        <div class="photoblock__social">
+                            <div class="photoblock__message">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                <span class="photoblock__socialCount">8</span>
+                            </div>
+                            <div class="photoblock__eye">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <span class="photoblock__socialCount">2005</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="photoblock__block">
+                    <div class="photoblock__photo">
+                        <img class="photoblock__img" src="img/photo6.png" alt="photo">
+                    </div>
+                    <div class="photoblock__text">Жодних доказів застосування Асадом хімічної зброї немає — Путін</div>
+                    <div class="photoblock__informblock">
+                        <div class="photoblock__data"><span class="photoblock__world">Світ</span>  28 травня, 2017 21:45</div>
+                        <div class="photoblock__social">
+                            <div class="photoblock__message">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                <span class="photoblock__socialCount">31</span>
+                            </div>
+                            <div class="photoblock__eye">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <span class="photoblock__socialCount">3015</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--VIDEO LOADING IN FHOTOBLOCK-->
+        <div id="photoblock__video">
+            <video width="300" controls >
+                <source src="video/TopNewsVideo.mp4" type="video/mp4">
+                <source src="video/TopNewsVideo.ogg" type="video/ogg">
+            </video>
+            <div id="closeBtn2"></div>
+        </div>
+
+
+
+
+        <!--PHOTOREPORTAJ-->
+        <div class="black">
+            <div class="photoreportajblock">
+                <!--сделать через Массонри-->
+                <div class="gallery"  data-masonry-options='{ "itemSelector": ".item-masonry" }'>
+                    <div class="item-masonry sizer sizer--1">
+                        <img class="img1" src="img/reportaj1.png" alt="reportaj">
+                        <i class="fa fa-share-square-o fa-share-square-o--photoreportaj1" aria-hidden="true"></i>
+                        <p class="item__text">
+                            Вогонь, водомети і сльозог інний газ: у Венесуелі
+                        </p>
+                    </div>
+                    <div class="item-masonry sizer sizer--2">
+                        <img class="img2" src="img/reportaj2.png" alt="reportaj">
+                        <i class="fa fa-share-square-o fa-share-square-o--photoreportaj2" id="sliderShare1" aria-hidden="true"></i>
+                        <p class="item__text item__text--2">
+                            Танцював із Саудами і штурхав колег із НАТО
+                        </p>
+                    </div>
+                    <div class="item-masonry sizer">
+                        <img class="img3" src="img/reportaj3.png" alt="reportaj">
+
+                    </div>
+                    <div class="item-masonry sizer sizer--2">
+                        <img class="img5" src="img/reportaj5.png" alt="reportaj">
+
+                    </div>
+
+                    <div class="item-masonry sizer">
+                        <img class="img7" src="img/reportaj7.png" alt="reportaj">
+
+                    </div>
+                    <div class="item-masonry sizer sizer--2">
+                        <img class="img8" src="img/reportaj8.png" alt="reportaj">
+
+                    </div>
+
+
+                    <div class="item-masonry sizer">
+                        <img class="img4" src="img/reportaj4.png" alt="reportaj">
+
+                    </div>
+
+                    <div class="item-masonry sizer">
+                        <img class="img6" src="img/reportaj6.png" alt="reportaj">
+
+                    </div>
+
+
+                    <div class="item-masonry sizer sizer--1">
+                        <img class="img10" src="img/reportaj10.png" alt="reportaj">
+
+                    </div>
+
+                    <div class="item-masonry sizer ">
+                        <img class="img9" src="img/reportaj9.png" alt="reportaj">
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <!--BANNER-->
+        <div class="banner">
+            <div class="banner__block">
+                <img class="banner__img" src="img/banner.png" alt="banner">
+            </div>
+        </div>
+
+        <!--PHOTOBLOCK IMAGES-->
+        <div class="photoblock">
+            <div class="photoblock__blocks">
+                <div class="photoblock__block">
+                    <div class="photoblock__photo">
+                        <img class="photoblock__img" src="img/photo1.png" alt="photo">
+                    </div>
+                    <div class="photoblock__text">У столиці Афганістану стався потужний
+                        вибух - понад 90 людей поранені, є загиблі</div>
+                    <div class="photoblock__informblock">
+                        <div class="photoblock__data"><span class="photoblock__world">Світ</span>  28 травня, 2017 08:51</div>
+                        <div class="photoblock__social">
+                            <div class="photoblock__message">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                <span class="photoblock__socialCount">31</span>
+                            </div>
+                            <div class="photoblock__eye">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <span class="photoblock__socialCount">3015</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photoblock__block">
+                    <div class="photoblock__photo">
+                        <img class="photoblock__img" src="img/photo2.png" alt="photo">
+                    </div>
+                    <div class="photoblock__text">В уряді назвали п'ять областей України з найгіршими дорогами</div>
+                    <div class="photoblock__informblock">
+                        <div class="photoblock__data"><span class="photoblock__ukraine">Україна</span>  28 травня, 2017 07:23</div>
+
+                        <div class="photoblock__social">
+                            <div class="photoblock__message">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                <span class="photoblock__socialCount">2</span>
+                            </div>
+                            <div class="photoblock__eye">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <span class="photoblock__socialCount">1025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photoblock__block">
+                    <div class="photoblock__photo">
+                        <img class="photoblock__img" src="img/photo3.png" alt="photo">
+                        <i class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i>
+                        <i class="fa fa-share-square-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="photoblock__text">Зіркові гості куми Порошенка.<br> Хто вітав Білозір із днем народження</div>
+                    <div class="photoblock__informblock">
+                        <div class="photoblock__data"><span class="photoblock__glamur"> Гламур</span>  27 травня, 2017 22:18</div>
+                        <div class="photoblock__social">
+                            <div class="photoblock__message">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                <span class="photoblock__socialCount">31</span>
+                            </div>
+                            <div class="photoblock__eye">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <span class="photoblock__socialCount">3015</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photoblock__block">
+                    <div class="photoblock__photo">
+                        <img class="photoblock__img" src="img/photo4.png" alt="photo">
+                    </div>
+                    <div class="photoblock__text">НБУ оголосив про зняття трьох адміністративних обмежень на валютному ринку</div>
+                    <div class="photoblock__informblock">
+                        <div class="photoblock__data"><span class="photoblock__money">Гроші</span>  28 травня, 2017 08:51</div>
+                        <div class="photoblock__social">
+                            <div class="photoblock__message">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                <span class="photoblock__socialCount">31</span>
+                            </div>
+                            <div class="photoblock__eye">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <span class="photoblock__socialCount">3015</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photoblock__block">
+                    <div class="photoblock__photo">
+                        <img class="photoblock__img" src="img/photo5.png" alt="photo">
+                        <i class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i>
+                        <i class="fa fa-share-square-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="photoblock__text">Флінн погодився передати до Сенату документи в рамках розслідування
+                        щодо втручення РФ у вибори... </div>
+                    <div class="photoblock__informblock">
+                        <div class="photoblock__data"><span class="photoblock__world">Світ</span>  27 травня, 2017 22:18</div>
+                        <div class="photoblock__social">
+                            <div class="photoblock__message">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                <span class="photoblock__socialCount">8</span>
+                            </div>
+                            <div class="photoblock__eye">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <span class="photoblock__socialCount">2005</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="photoblock__block">
+                    <div class="photoblock__photo">
+                        <img class="photoblock__img" src="img/photo6.png" alt="photo">
+                    </div>
+                    <div class="photoblock__text">Жодних доказів застосування Асадом хімічної зброї немає — Путін</div>
+                    <div class="photoblock__informblock">
+                        <div class="photoblock__data"><span class="photoblock__world">Світ</span>  28 травня, 2017 21:45</div>
+                        <div class="photoblock__social">
+                            <div class="photoblock__message">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                <span class="photoblock__socialCount">31</span>
+                            </div>
+                            <div class="photoblock__eye">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <span class="photoblock__socialCount">3015</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!--ASIDE-->
+    <aside>
+        <div class="news__container">
+            <div class="news">
+                <div class="news__title">
+                    Останні новини
+                </div>
+
+                <div class="news__block">
+                    <div class="news__text news__text--bold">
+                        У "Київпастрансі" пояснили, навіщо підвищують вартість проїзду
+                    </div>
+                    <div class="news__informblock">
+                        29 Травня, 2017 17:22
+                    </div>
+                </div>
+
+                <div class="news__block">
+                    <div class="news__text">
+                        Водій легковика, який врізався в маршрутку у Вишгороді, був напідпитку - поліція
+
+                    </div>
+                    <div class="news__informblock">
+                        29 Травня, 2017 17:03
+                    </div>
+                </div>
+
+                <div class="news__photo">
+                    <img class="news__img" src="img/rightbanner1.png" alt="photo">
+                </div>
+
+                <div class="news__block">
+                    <div class="news__text">
+                        Кронпринцеса Данії вбралася в українську вишиванку вартістю у понад тисячу доларів
+                    </div>
+                    <div class="news__informblock">
+                        29 Травня, 2017 16:58
+                    </div>
+                </div>
+
+                <div class="news__block">
+                    <div class="news__photo">
+                        <img class="news__img"  src="img/rightbanner2.png" alt="photo">
+                    </div>
+                    <div class="news__text">
+                        Вона робить це на зло: психолог проаналізував мову тіла Меланії Трамп і розповів, що не так з її сумом
+                    </div>
+                    <div class="news__informblock">
+                        29 Травня, 2017 16:21
+                    </div>
+                </div>
+
+                <div class="news__block">
+                    <div class="news__text news__text--bold">
+                        Де дешевше: порівняння цін на продукти в супермаркетах Києва
+                    </div>
+                    <div class="news__informblock">
+                        29 Травня, 2017 16:02
+                    </div>
+                </div>
+
+                <div class="news__block">
+                    <div class="news__text">
+                        На Буковині затримали слідчого поліції під час отримання хабара у $ 3 тисячі
+                    </div>
+                    <div class="news__informblock">
+                        29 Травня, 2017 15:47
+                    </div>
+                </div>
+
+                <div class="news__block">
+                    <div class="news__text">
+                        У Молдові пояснили, чому вислали російських дипломатів
+                    </div>
+                    <div class="news__informblock">
+                        29 Травня, 2017 15:13
+                    </div>
+                </div>
+
+                <div class="news__block">
+                    <div class="news__photo">
+                        <img class="news__img" src="img/rightbanner3.png" alt="photo">
+                    </div>
+                    <div class="news__text">
+                        Це якийсь перевернутий світ: російський журналіст шокований затриманням школяра за читання "Гамлета" на...
+                    </div>
+                    <div class="news__informblock">
+                        29 Травня, 2017 15:03
+                    </div>
+                </div>
+
+                <div class="news__block">
+                    <div class="news__text">
+                        Кронпринцеса Данії вбралася в українську вишиванку вартістю у понад тисячу доларів
+                    </div>
+                    <div class="news__informblock">
+                        29 Травня, 2017 16:58
+                    </div>
+                </div>
+
+                <div class="news__block">
+                    <div class="news__photo">
+                        <img class="news__img" src="img/rightbanner2.png" alt="photo">
+                    </div>
+                    <div class="news__text">
+                        Вона робить це на зло: психолог проаналізував мову тіла Меланії Трамп і розповів, що не так з її сумом
+                    </div>
+                    <div class="news__informblock">
+                        29 Травня, 2017 16:21
+                    </div>
+                </div>
+
+                <div class="news__block">
+                    <div class="news__text news__text--bold">
+                        Де дешевше: порівняння цін на продукти в супермаркетах Києва
+                    </div>
+                    <div class="news__informblock">
+                        29 Травня, 2017 16:02
+                    </div>
+                </div>
+
+                <div class="news__block">
+                    <div class="news__text">
+                        На Буковині затримали слідчого поліції під час отримання хабара у $ 3 тисячі
+                    </div>
+                    <div class="news__informblock">
+                        29 Травня, 2017 15:47
+                    </div>
+                </div>
+
+                <div class="news__block">
+                    <div class="news__text">
+                        У Молдові пояснили, чому вислали російських дипломатів
+                    </div>
+                    <div class="news__informblock">
+                        29 Травня, 2017 15:13
+                    </div>
+                </div>
+
+                <div class="news__load">
+                    <p class="news__loadText">Завантажити ще</p>
+                    <img class="news__loadImg" src="img/load.png" alt="load">
+
+                </div>
+            </div>
+        </div>
+    </aside>
+        <!--FOOTER-->
+        <footer class="footer">
+            <div class="footer__logos">
+                <img class="footer__logo1" src="img/logo-opo.svg">
+                <img class="footer__logo2" src="img/logo-tet.svg">
+                <img class="footer__logo3" src="img/logo-tpt.svg">
+                <img class="footer__logo4" src="img/logo-pp.svg">
+                <img class="footer__logo5" src="img/logo-opoi.svg">
+                <img class="footer__logo6" src="img/logo-bigudi.svg">
+                <img class="footer__logo7" src="img/logo-unian.svg">
+                <img class="footer__logo8" src="img/logo-ovva.svg">
+
+
+            </div>
+            <div class="footer__tsn">
+                тсн вражає
+            </div>
+            <!--<div class="footer__data">-->
+                <!--<hr class="footer__line footer__line--left"><span class="footer__data-span">2017</span><hr class="footer__line footer__line--right">-->
+            <!--</div>-->
+            <div class="footer__data">
+            <div class="footer__line footer__line--1"></div>
+            <div class="footer__line footer__line--2"></div>
+            <p class="footer__year">2017</p>
+            </div>
+        </footer>
+
+        <!--SLIDER FOR PHOTOREPORTAJ ONCLICK-->
+        <!--BXSLIDER2-->
+        <div id="photoreportajPopup__overllay"> <!--class="popupOverlay"--></div>
+
+        <div class="slider-two">
+            <!--<div class="photoreportaj__title">-->
+                <!--Вогонь, водомети і сльозогінний газ: у Венесуелі в ході протестів 250 осіб отримали поранення-->
+            <!--</div>-->
+
+            <ul class="bxslider" id="slider2">
+                <li><img class="img-bxSlider2" src="img/popupWindow.jpg" alt="popupWindow"></li>
+                <li><img class="img-bxSlider2" src="img/popupWindow.jpg" alt="popupWindow"></li>
+                <li><img class="img-bxSlider2" src="img/popupWindow.jpg" alt="popupWindow"></li>
+                <li><img class="img-bxSlider2" src="img/popupWindow.jpg" alt="popupWindow"></li>
+                <li><img class="img-bxSlider2" src="img/popupWindow.jpg" alt="popupWindow"></li>
+                <li><img class="img-bxSlider2" src="img/popupWindow.jpg" alt="popupWindow"></li>
+                <li><img class="img-bxSlider2" src="img/popupWindow.jpg" alt="popupWindow"></li>
+                <li><img class="img-bxSlider2" src="img/popupWindow.jpg" alt="popupWindow"></li>
+                <li><img class="img-bxSlider2" src="img/popupWindow.jpg" alt="popupWindow"></li>
+                <li><img class="img-bxSlider2" src="img/popupWindow.jpg" alt="popupWindow"></li>
+                <li><img class="img-bxSlider2" src="img/popupWindow.jpg" alt="popupWindow"></li>
+
+            </ul>
+
+            <div  class="bx-pager2" id="bx-pager2">
+                <a data-slide-index="0" href=""><img src="img/popupSmall1.png" alt="thubnails" /></a>
+                <a data-slide-index="1" href=""><img  src="img/popupSmall2.png" alt="thubnails" /></a>
+                <a data-slide-index="2" href=""><img src="img/popupSmall3.png" alt="thubnails" /></a>
+                <a data-slide-index="3" href=""><img src="img/popupSmall4.png" alt="thubnails" /></a>
+                <a data-slide-index="4" href=""><img src="img/popupSmall5.png" alt="thubnails" /></a>
+                <a data-slide-index="5" href=""><img src="img/popupSmall6.png" alt="thubnails" /></a>
+                <a data-slide-index="6" href=""><img src="img/popupSmall7.png" alt="thubnails" /></a>
+                <a data-slide-index="7" href=""><img src="img/popupSmall4.png" alt="thubnails" /></a>
+                <a data-slide-index="8" href=""><img src="img/popupSmall5.png" alt="thubnails" /></a>
+                <a data-slide-index="9" href=""><img src="img/popupSmall6.png" alt="thubnails" /></a>
+            </div>
+            <div id="closeBtn3"></div>
+
+    </div>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+    </body>
+    </html>
+-----------------
+w<div class="module">
+    <h1>This is a reponsive container</h1>
+    <p>This container is <span class="element"></span> pixels wide when the browser is <span class="browser"></span> pixels wide. Resize the browser to see it change.</p>
+</div>
+
+html {
+background: #333;
+}
+
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.module {
+background-color: white;
+border-radius: 10px;
+padding: 20px;
+width: 80%;
+}
+----------------
+<div class="module">
+    <h1>This is an adaptive container</h1>
+    <p>This container is 800 pixels wide when the browser is any width over 500 pixels. Any below that, and the continer shrinks to 300 pixels.</p>
+</div>
+
+html {
+background: #333;
+}
+
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.module {
+background-color: white;
+border-radius: 10px;
+padding: 20px;
+width: 800px;
+}
+
+@media screen and (max-width: 500px) {
+.module {
+width: 300px;
+}
+}
